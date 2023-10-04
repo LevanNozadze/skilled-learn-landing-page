@@ -1,10 +1,93 @@
+:root {
+    --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  }
+
+  * {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
 body {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
     height: 100vh;
-
-}
+    width: 100%;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+/* Logo top left */
+.black-logo {
+    color: rgba(19, 24, 63, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+ /* top right button */
+.header-button {
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    background: rgba(19, 24, 63, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.head-message-position {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.head-message {
+    color: rgba(19, 24, 63, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+p {
+    color: rgba(131, 134, 154, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.header-message-button {
+    width: 167px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 31.5px;
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+    color: var(--FFFFFF, #FFF);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
 }
