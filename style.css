@@ -91,3 +91,75 @@ p {
     font-weight: 700;
     line-height: 26px;
 }
+
+.middle-content {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+
+
+/* member only text */
+.member {
+    color: rgba(131, 134, 154, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    align-self: center;
+}
+
+/* fake number is 29 K */
+.fake-number {
+    color: rgba(19, 24, 63, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+.middle-circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    width: 253px;
+    height: 253px;
+    flex-shrink: 0;
+    border-radius: 158.5px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.member-box {
+    display: flex;
+    flex-direction: column;
+    margin: -24px -37px 0px 0px;
+    padding-top: 16px;
+    width: 105px;
+    height: 100px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+}
+
+#hours {
+    margin: 16px 0px 0px 20px;
+    align-self: flex-start;
+}
+
+.Course-box{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin: 0px 0px -24px -37px;
+    width: 155px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+}
