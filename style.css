@@ -44,6 +44,7 @@ main {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    cursor: pointer;
 }
 
  /* top right button */
@@ -73,6 +74,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    max-width: 398px;
+    margin-right: 16.31px;
     
 }
 
@@ -106,6 +109,7 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
+    cursor: pointer;
 }
 
 .header-message-button:hover {
@@ -153,7 +157,7 @@ p {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
 
-.circle-fix {
+.mobile-img-fix{
     display: flex;
     width: 253px;
     height: 253px;
@@ -167,6 +171,9 @@ p {
     margin-left: 7px;
 }
 
+.tablet-img {
+    display: none;
+}
 
 .member-box {
     display: flex;
@@ -282,12 +289,16 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
-    width: 375px;
+    max-width: 100%;
     height: 120px;
     flex-shrink: 0;
     background: rgba(19, 24, 63, 1);
     margin-top: 80px;
 }
+
+.footer-skilled {
+    cursor: pointer;;
+}   
 
 .under-btn {
     display: flex;
@@ -298,6 +309,7 @@ p {
     flex-shrink: 0;
     border-radius: 28px;
     background: var(--Gradient-2, linear-gradient(180deg, #4851FF 0%, #F02AA6 100%));
+    cursor: pointer;
 }
 
 .under-btn:hover {
@@ -311,4 +323,77 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
+}
+
+.decor {
+    display: none;
+}
+
+
+/*************** Tablet ****************/
+@media (min-width: 768px) {
+    .media-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .center-section {
+        padding: 23px;
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 78.87px;
+    }
+
+    .box-inner {
+        width: 339px;
+        height: 259px;
+        
+    }
+
+    .check-box {
+        margin-top: 40px;
+    }
+
+    .middle-circle {
+        width: 216.54px;
+        height: 382.531px;
+        flex-shrink: 0;
+        
+    }
+
+    .mobile-img {
+        display: none;
+    }   
+    
+    .tablet-img-fix {
+        display: flex;
+        justify-content: center;
+        width: 216.54px;
+        height: 382.531px;
+        overflow: hidden;
+        flex-shrink: 0;
+        border-radius: 158.5px;
+        position: absolute;
+    }
+
+    .decor {
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        margin-top: -145px; 
+        margin-left: 100px;
+        max-width: 100%;    
+    }
+
+    .tablet-img {
+        display: flex;
+        align-self: flex-end;
+        width: 238.723px;
+        height: 329.933px;
+        flex-shrink: 0;
+    }
+    
 }
