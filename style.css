@@ -15,17 +15,24 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
-    height: 100vh;
-    width: 100%;
-    padding-top: 16px;
-    padding-right: 16px;
-    padding-left: 16px;
-    }
+    padding: 16px 16px 0px 16px;
+}
+
+.body > .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 38px;
 }
 
@@ -41,16 +48,25 @@ body {
 
  /* top right button */
 .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
     height: 48px;
     border-radius: 28px;
     background: rgba(19, 24, 63, 1);
+
     color: rgba(255, 255, 255, 1);
     font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
+    text-decoration: none;
+}
+
+.header-button:hover {
+    background: rgba(102, 108, 163, 1);
 }
 
 .head-message-position {
@@ -90,6 +106,10 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
+}
+
+.header-message-button:hover {
+    background: var(--Gradient-1-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
 }
 
 .middle-content {
@@ -177,4 +197,118 @@ p {
     border-radius: 10px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+}
+
+.check-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.box-inner {
+    display: flex;
+    width: 343px;
+    height: 120px;
+    border-radius: 10px;
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+    justify-content: center;
+    align-items: center;
+}
+
+.check-box-text {
+    display: flex;
+    margin: 24px 29px 32px 28px;
+    color: var(--FFFFFF, #FFF);
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+}
+
+.card-box {
+    width: 343px;
+    height: 259px;
+
+    margin-top: 40px;
+    padding: 0px 28px;
+    border-radius: 10px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.icon {
+    margin-bottom: 24px;
+    margin-top: -24px;
+}
+
+.card-head-text {
+    color: rgba(19, 24, 63, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.card-p-text {
+    color: rgba(131, 134, 154, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.clicked {
+    margin: 0;
+    color: rgba(247, 71, 128, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.clicked:hover {
+    color: rgba(255, 167, 195, 1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    width: 375px;
+    height: 120px;
+    flex-shrink: 0;
+    background: rgba(19, 24, 63, 1);
+    margin-top: 80px;
+}
+
+.under-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--Gradient-2, linear-gradient(180deg, #4851FF 0%, #F02AA6 100%));
+}
+
+.under-btn:hover {
+    background: var(--Gradient-2-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%));
+}
+
+.Get-ud-btn {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
 }
