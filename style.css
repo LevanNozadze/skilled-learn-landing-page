@@ -74,9 +74,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    max-width: 398px;
-    margin-right: 16.31px;
-    
+    max-width: 343px;
+    margin-bottom: 70px;
 }
 
 .head-message {
@@ -118,7 +117,6 @@ p {
 
 .middle-content {
     display: flex;
-    margin-top: 70px;
     justify-content: center;
     z-index: 1;
 }
@@ -325,31 +323,27 @@ p {
     line-height: 28px;
 }
 
-.decor {
-    display: none;
-}
+/*************** Tablet min 768 ****************/
+@media screen and (min-width: 768px) {
 
-
-/*************** Tablet ****************/
-@media (min-width: 768px) {
-
-    main {
-        padding: 0px 39.5px;
+    body {
+        background-image: url("./imgs/tablet-screen.png");
+        background-repeat: no-repeat;
+        background-position: top -72px right -301px;
     }
 
-    .head-message-position {
-        margin-left: 40px;
+    main {
+        padding: 0px 39px;
     }
 
     .header {
-        margin: 24px 30px;
+        margin: 31px 40px 70px 39px;
     }
 
     .media-row {
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-right: 118px;
         justify-content: space-between;
     }
 
@@ -359,7 +353,11 @@ p {
         max-width: 1016px;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 78.87px;
+        margin-top: 140px;
+    }
+
+    .middle-circle {
+        display: none;
     }
 
     .card-box  {
@@ -370,56 +368,64 @@ p {
     .box-inner {
         width: 339px;
         height: 259px;
-        
     }
 
     .check-box {
         margin-top: 40px;
     }
 
-    .middle-circle {
-        width: 216.54px;
-        height: 382.531px;
-        flex-shrink: 0;
-        
-    }
-
     .mobile-img {
         display: none;
-    }   
-    
-    .tablet-img-fix {
-        display: flex;
-        justify-content: center;
-        width: 216.54px;
-        height: 382.531px;
-        overflow: hidden;
-        flex-shrink: 0;
-        border-radius: 158.5px;
-        position: absolute;
     }
 
-    .decor {
-        display: flex;
-        position: absolute;
-        z-index: -1;
-        margin-top: -145px; 
-        margin-left: 100px;
-    }
-
-    .reactangle {
-        max-width: 100%;
-    }
-
-    .tablet-img {
-        display: flex;
-        align-self: flex-end;
-        width: 238.723px;
-        height: 329.933px;
-        flex-shrink: 0;
+    .mobile-img-fix {
+        display: none;
     }
 
     .footer {
-        margin-top: 73px;
+        margin-top: 85px;
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-image: url("./imgs/max-screenn.png");
+        background-position: top -148px right -337px;
+        /* width: 991.631px;
+        height: 936.917px; */
+    }
+
+    main {
+        padding: 0px 165px;
+    }
+
+    .center-section {
+        margin-top: 180px;
+    }
+
+    .center-section {
+        max-width: 1390px;
+    }
+
+    .header {
+        margin: 39px 165px 185px 165px;
+    }
+
+    .card-box  {
+        width: 350px;
+        height: 322px;
+    }
+
+    .box-inner {
+        width: 350px;
+        height: 322px;
+    }
+
+    
+    .footer {
+        margin-top: 140px;
+        padding: 0px 165px;
     }
 }
