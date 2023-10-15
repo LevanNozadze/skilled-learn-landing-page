@@ -16,3 +16,4 @@ Modern and Clean UI: The user interface is designed with a modern and clean aest
 
 ## screenshots
 
+![screen 373px](skilled-learn-landing-page/assets/373px_C__Users_Dell_Documents_github_skilled-learn-landing-page_index.html)
