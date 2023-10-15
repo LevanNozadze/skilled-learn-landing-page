@@ -12,3 +12,8 @@ Table of Contents
 Modern and Clean UI: The user interface is designed with a modern and clean aesthetic, making it visually appealing.
 
 **Easy Customization:** The code is well-organized and can be easily customized to fit different branding needs.
+
+
+## screenshots
+
+![Screenshot 1](assets/images/373px_C__Users_Dell_Documents_github_skilled-learn-landing-page_index.html)
