@@ -6,9 +6,9 @@ Skilled E-Learning Landing Page is a modern and visually appealing website templ
 
 Table of Contents
 
-##Features
+## Features
 
-@Features
+@ Features
 **Responsive Design:** The landing page is fully responsive, ensuring a great user experience on various devices and screen sizes.
 Modern and Clean UI: The user interface is designed with a modern and clean aesthetic, making it visually appealing.
 
